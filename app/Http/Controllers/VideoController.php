@@ -14,7 +14,6 @@ class VideoController extends Controller
     {
 
         $show= PostModel::where('_id','=','5d9b31d74c9c99238c1fab28')->get();
-        dd($show);
         return view('video', [
             'videos' => $show
         ]);
